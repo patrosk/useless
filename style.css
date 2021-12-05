@@ -3,14 +3,12 @@
 }
 body {
   margin: 0;
-  /* background-color: #150f11; */
   background-color: #1c1816;
-  /* background-color: #28231f; */
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   color: hotpink;
 }
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   src: url(/Quicksand-Light.woff) format(woff);
   src: url(/Quicksand-Light.woff2) format(woff2);
 }
