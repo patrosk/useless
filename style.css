@@ -1,27 +1,73 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --faded_black: #1c1816;
+  --pink: rgb(255, 75, 165);
+  --font: 'Quicksand';
+  --neon_font: 'Dancing';
+}
 body {
   margin: 0;
-  background-color: #1c1816;
-  font-family: 'Quicksand';
-  color: hotpink;
+  background-color: var(--faded_black);
+  font-family: var(--font);
+  color: var(--pink);
+  font-size: 16px;
+  height: 300vh;
 }
 @font-face {
   font-family: 'Quicksand';
   src: url(/Quicksand-Light.woff) format(woff);
   src: url(/Quicksand-Light.woff2) format(woff2);
 }
+@font-face {
+  font-family: 'Pacifico';
+  src: url(/Pacifico-Regular.woff) format(woff);
+  src: url(/Pacifico-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: 'Dancing';
+  src: url(/DancingScript-Regular.woff) format('woff');
+  src: url(/DancingScript-Regular.woff2) format('woff2');
+}
+.first_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1 {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   text-align: center;
+  margin: 10px;
+  font-family: var(--neon_font);
+}
+.neon_text {
+  color: var(--pink);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px var(--pink),
+    0 0 82px var(--pink), 0 0 92px var(--pink), 0 0 102px var(--pink),
+    0 0 151px var(--pink);
 }
 .hero {
   width: 100%;
+  visibility: visible;
+  transition: 0.6s ease;
 }
 .hero img {
   width: 100%;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s ease;
+}
+h2 {
+  font-weight: 300;
+  text-align: center;
+  transition: 0.6s ease;
+}
+.arrow {
+  height: 3rem;
 }
 .bamford-large {
   width: 100%;
