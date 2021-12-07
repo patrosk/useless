@@ -9,10 +9,11 @@
 }
 body {
   margin: 0;
-  background-color: var(--faded_black);
+  /* background-color: var(--faded_black); */
   font-family: var(--font);
   color: var(--pink);
   font-size: 16px;
+  max-width: 100vw;
   /* height: 300vh; */
 }
 @font-face {
@@ -124,6 +125,9 @@ h2 {
   display: flex;
   justify-content: center;
 }
+.where {
+  padding-bottom: 2.5rem;
+}
 .game-container {
   display: flex;
   flex-wrap: wrap;
@@ -135,17 +139,29 @@ h2 {
   height: 5rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 4.5rem;
+  margin-bottom: 3.5rem;
 }
 .game-container img {
   max-width: 50%;
   max-height: 100%;
 }
+.found-bamford {
+  overflow: hidden;
+  border: 1px solid transparent;
+}
 .congrats {
   visibility: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 10;
+  border: 1px solid transparent;
+}
+.congrats h2 {
+  font-family: var(--neon_font);
+  font-size: 2rem;
 }
 .star {
   width: 100%;
@@ -155,6 +171,7 @@ h2 {
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  overflow: hidden;
 }
 .smallstar {
   position: absolute;

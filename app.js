@@ -1,3 +1,4 @@
+// HERO IMAGE FADE OUT/IN
 const hero = document.querySelector('.hero');
 const body = document.querySelector('body');
 
@@ -12,6 +13,7 @@ window.addEventListener('scroll', () => {
   // console.log(window.scrollY);
 });
 
+// TEXT FADE OUT/IN
 const arrow = document.querySelector('.arrow');
 const scrollToPlay = document.querySelector('.scrollToPlay');
 const whereIsB = document.querySelector('.where');
@@ -28,3 +30,14 @@ window.addEventListener('scroll', () => {
     whereIsB.classList.add('hidden');
   }
 });
+
+// MOVING TEXT
+const question = document.querySelector('p');
+const x = 0;
+
+function move() {
+  question(x, 200, 100, 100);
+  x = x + 3;
+}
+
+move(question);
