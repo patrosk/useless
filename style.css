@@ -126,7 +126,28 @@ h2 {
   justify-content: center;
 }
 .where {
-  padding-bottom: 2.5rem;
+  margin: 0;
+  transform: translateY(2rem);
+}
+p {
+  width: fit-content;
+}
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.here {
+  transform: translate(2rem, 15rem);
+}
+.or_here {
+  transform: translate(3rem, 28rem);
+}
+.or_maybe_here {
+  transform: translate(11rem, 17rem);
 }
 .game-container {
   display: flex;
@@ -139,7 +160,7 @@ h2 {
   height: 5rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
 }
 .game-container img {
   max-width: 50%;

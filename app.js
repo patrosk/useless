@@ -30,14 +30,3 @@ window.addEventListener('scroll', () => {
     whereIsB.classList.add('hidden');
   }
 });
-
-// MOVING TEXT
-const question = document.querySelector('p');
-const x = 0;
-
-function move() {
-  question(x, 200, 100, 100);
-  x = x + 3;
-}
-
-move(question);
