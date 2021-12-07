@@ -8,8 +8,8 @@ window.addEventListener('scroll', () => {
   if (window.scrollY < 100) {
     hero.classList.remove('hidden');
   }
-  console.log('Scrolling...');
-  console.log(window.scrollY);
+  // console.log('Scrolling...');
+  // console.log(window.scrollY);
 });
 
 const arrow = document.querySelector('.arrow');
