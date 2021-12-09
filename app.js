@@ -1,3 +1,11 @@
+// DOUBLE CLICK ON PICTURE
+const heroImage = document.querySelector('.hero img');
+console.log(heroImage);
+
+heroImage.addEventListener('click', () => {
+  console.log('Hi Bamford');
+});
+
 // HERO IMAGE FADE OUT/IN
 const hero = document.querySelector('.hero');
 const body = document.querySelector('body');
@@ -19,12 +27,13 @@ const scrollToPlay = document.querySelector('.scrollToPlay');
 const whereIsB = document.querySelector('.where');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 230) {
+  // console.log(window.scrollY);
+  if (window.scrollY > 150) {
     scrollToPlay.classList.add('hidden');
     arrow.classList.add('hidden');
     whereIsB.classList.remove('hidden');
   }
-  if (window.scrollY < 230) {
+  if (window.scrollY < 150) {
     scrollToPlay.classList.remove('hidden');
     arrow.classList.remove('hidden');
     whereIsB.classList.add('hidden');
@@ -50,7 +59,14 @@ hidingPlaces.forEach((hidingPlace) => {
       gameContainer.classList.add('hidden');
       questions.classList.add('hidden');
       congrats.classList.remove('hidden');
+      congrats.classList.add('bringtofront');
     } else {
+      const i = Math.floor(Math.random() * 6);
+      const failMessage = failMessages[i];
+      const fail = document.querySelector('.fail');
+
+      fail.textContent = failMessage;
+
       console.log('Booo');
     }
   });

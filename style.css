@@ -169,20 +169,28 @@ p {
   max-width: 50%;
   max-height: 100%;
 }
+.fail {
+  transform: translate(calc(40vw), calc(30vh));
+  font-size: 3rem;
+  transition: 0.5s ease-in;
+  margin: 0;
+}
 .found-bamford {
   overflow: hidden;
   border: 1px solid transparent;
   /* transform: translateY(-35rem); */
 }
+.bringtofront {
+  position: absolute;
+}
 .congrats {
-  /* visibility: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
   z-index: 10;
   border: 1px solid transparent;
+  transform: translateY(calc(-100vh));
 }
 .congrats h2 {
   font-family: var(--neon_font);

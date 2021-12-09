@@ -49,7 +49,14 @@ const objects = [
   },
 ];
 
-// console.log(objects);
+const failMessages = [
+  'sorry',
+  'nope',
+  'fail',
+  'not there',
+  'try again',
+  'come on',
+];
 
 const gameContainer = document.querySelector('.game-container');
 
@@ -63,9 +70,12 @@ objects.forEach((object) => {
 
   img.src = imageUrl;
   img.setAttribute('id', id);
+  img.setAttribute('alt', alt);
   div.appendChild(img);
-
-  // console.log(id);
 
   gameContainer.appendChild(div);
 });
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
