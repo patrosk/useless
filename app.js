@@ -30,3 +30,28 @@ window.addEventListener('scroll', () => {
     whereIsB.classList.add('hidden');
   }
 });
+
+// RANDOM NUMBER GENERATOR
+const randomNumber = Math.floor(Math.random() * 8);
+console.log(randomNumber);
+
+// CLICK ON HIDING PLACE
+const hidingPlaces = document.querySelectorAll('.game-container div');
+const questions = document.querySelector('.questions');
+
+hidingPlaces.forEach((hidingPlace) => {
+  const image = hidingPlace.querySelector('img');
+  const id = hidingPlace.querySelector('img').id;
+  const congrats = document.querySelector('.congrats');
+
+  image.addEventListener('click', () => {
+    if (id == randomNumber) {
+      console.log('Hooray!');
+      gameContainer.classList.add('hidden');
+      questions.classList.add('hidden');
+      congrats.classList.remove('hidden');
+    } else {
+      console.log('Booo');
+    }
+  });
+});
