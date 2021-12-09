@@ -63,9 +63,15 @@ hidingPlaces.forEach((hidingPlace) => {
     } else {
       const i = Math.floor(Math.random() * 6);
       const failMessage = failMessages[i];
-      const fail = document.querySelector('.fail');
+      const fail = document.querySelector('.fail p');
 
       fail.textContent = failMessage;
+      fail.classList.add('fail-animation');
+
+      function delay(time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+      }
+      delay(500).then(() => fail.classList.remove('fail-animation'));
 
       console.log('Booo');
     }
