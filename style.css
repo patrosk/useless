@@ -4,6 +4,7 @@
 :root {
   --faded_black: #1c1816;
   --pink: rgb(255, 75, 165);
+  --whiteish: rgb(252, 225, 247);
   --font: 'Quicksand';
   --neon_font: 'Dancing';
 }
@@ -13,71 +14,17 @@ body {
   font-family: var(--font);
   color: var(--pink);
   font-size: 16px;
-  /* max-width: 90%; */
   height: 100vh;
 }
 @font-face {
   font-family: 'Quicksand';
-  src: url(/Quicksand-Light.woff) format(woff);
-  src: url(/Quicksand-Light.woff2) format(woff2);
-}
-@font-face {
-  font-family: 'Pacifico';
-  src: url(/Pacifico-Regular.woff) format(woff);
-  src: url(/Pacifico-Regular.woff2) format(woff2);
+  src: url(/fonts/Quicksand-Light.woff) format(woff);
+  src: url(/fonts/Quicksand-Light.woff2) format(woff2);
 }
 @font-face {
   font-family: 'Dancing';
-  src: url(/DancingScript-Regular.woff) format('woff');
-  src: url(/DancingScript-Regular.woff2) format('woff2');
-}
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-clouds-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 10000px 0;
-  }
-}
-
-.stars,
-.twinkling,
-.clouds {
-  position: absolute;
-  /* top: 0; */
-  left: 0;
-  right: 0;
-  /* bottom: 0; */
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.stars {
-  background: #000 url(/images/stars.png) repeat top center;
-  z-index: -3;
-}
-
-.twinkling {
-  background: transparent url(/images/twinkling.png) repeat top center;
-  z-index: -2;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.clouds {
-  background: transparent url(/images/clouds.png) repeat top center;
-  z-index: -1;
-  opacity: 0.4;
-  animation: move-clouds-back 200s linear infinite;
+  src: url(/fonts/DancingScript-Regular.woff) format('woff');
+  src: url(/fonts/DancingScript-Regular.woff2) format('woff2');
 }
 
 .first_section {
@@ -103,7 +50,6 @@ h1 {
     0 0 151px var(--pink);
 }
 .hero {
-  /* width: 100vw; */
   visibility: visible;
   transition: 0.6s ease;
 }
@@ -133,25 +79,17 @@ p {
   width: fit-content;
   margin: 0;
 }
-.blink_me {
+.blink {
   animation: blinker 3s linear infinite;
-}
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
 }
 .here {
   transform: translate(2rem, 15rem);
-  /* margin: 0; */
 }
 .or_here {
   transform: translate(3rem, 26rem);
-  /* margin: 0; */
 }
 .or_maybe_here {
   transform: translate(11rem, 17rem);
-  /* margin: 0; */
 }
 .game-container {
   display: flex;
@@ -181,21 +119,15 @@ p {
 .fail-animation {
   animation: fadein ease 0.5s;
 }
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .found-bamford {
   overflow: hidden;
   border: 1px solid transparent;
-  /* transform: translateY(-35rem); */
+  transform: translateY(-35rem);
+  z-index: -100;
+  position: relative;
 }
 .bringtofront {
-  position: absolute;
+  position: relative;
 }
 .congrats {
   display: flex;
@@ -204,11 +136,20 @@ p {
   align-items: center;
   z-index: 10;
   border: 1px solid transparent;
-  transform: translateY(calc(-100vh));
 }
 .congrats h2 {
   font-family: var(--neon_font);
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+.congrats button {
+  height: 2rem;
+  font-family: var(--font);
+  background-color: var(--whiteish);
+  border: 2px solid;
+  border-radius: 6px;
+  color: var(--pink);
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 .star {
   position: absolute;
@@ -234,6 +175,22 @@ p {
   animation-timing-function: linear;
 }
 
+/* KEYFRAMES */
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -242,6 +199,7 @@ p {
     transform: rotate(360deg);
   }
 }
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);

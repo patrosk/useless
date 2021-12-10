@@ -1,3 +1,4 @@
+// HIDING PLACES
 const objects = [
   {
     id: 0,
@@ -49,6 +50,7 @@ const objects = [
   },
 ];
 
+// FAIL MESSAGES
 const failMessages = [
   'sorry',
   'nope',
@@ -58,6 +60,7 @@ const failMessages = [
   'come on',
 ];
 
+// LOOP OUT HIDING PLACES
 const gameContainer = document.querySelector('.game-container');
 
 objects.forEach((object) => {
@@ -75,7 +78,3 @@ objects.forEach((object) => {
 
   gameContainer.appendChild(div);
 });
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
