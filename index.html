@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/media_queries.css" />
+    <link rel="stylesheet" href="/styles/keyframes.css" />
     <link rel="shortcut icon" type="image/x-icon" href="/duck.ico" />
     <title>Find Bamford!</title>
   </head>
@@ -13,10 +15,20 @@
     <section class="first_section">
       <h1 class="neon_text">Find Bamford!</h1>
       <div class="hero">
-        <img
-          src="/images/Bamfordblack.jpg"
-          alt="a small plastic duck called Bamford"
-        />
+        <picture>
+          <source
+            media="(max-width: 699px)"
+            srcset="/images/bamfordblack_small.jpg"
+          />
+          <source
+            media="(min-width: 700px)"
+            srcset="/images/Bamfordblack.jpg"
+          />
+          <img
+            src="/images/bamfordblack_small.jpg"
+            alt="a small plastic duck called Bamford"
+          />
+        </picture>
       </div>
       <h2 class="scrollToPlay">scroll down to play</h2>
       <div class="arrow">

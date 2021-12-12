@@ -1,0 +1,60 @@
+/* MEDIA QUERIES */
+@media screen and (min-width: 700px) {
+  .found {
+    width: 25%;
+  }
+  .here {
+    transform: translate(29rem, 15rem);
+  }
+  .or_here {
+    transform: translate(34rem, 26rem);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 32px;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .first_section {
+    display: flex;
+  }
+  .hero img {
+    border: 3px solid var(--pink);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .game-container div {
+    height: 7rem;
+  }
+  .here {
+    transform: translate(43rem, 15rem);
+  }
+  .or_here {
+    transform: translate(38rem, 34rem);
+  }
+  .or_maybe_here {
+    transform: translate(11rem, 21rem);
+  }
+  .fail {
+    transform: translate(calc(33vw), calc(30vh));
+  }
+  .found-bamford {
+    transform: translateY(-50rem);
+  }
+  .found {
+    width: 17%;
+  }
+  .congrats h2 {
+    font-size: 4rem;
+    margin: 5rem;
+  }
+  .congrats button {
+    height: 4rem;
+    font-size: 24px;
+  }
+}
