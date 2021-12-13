@@ -56,6 +56,11 @@ h1 {
 .hero img {
   width: 100%;
 }
+.spin-animation {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+}
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -108,6 +113,9 @@ p {
   max-width: 50%;
   max-height: 100%;
 }
+.game-container img:hover {
+  cursor: pointer;
+}
 .fail {
   transform: translate(calc(35vw), calc(30vh));
   font-size: 3rem;
@@ -150,6 +158,9 @@ p {
   color: var(--pink);
   font-weight: bold;
   margin-bottom: 1rem;
+}
+.congrats button:hover {
+  cursor: pointer;
 }
 .star {
   position: absolute;

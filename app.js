@@ -1,9 +1,13 @@
-// DOUBLE CLICK ON PICTURE
-const heroImage = document.querySelector('.hero img');
-console.log(heroImage);
+// HERO IMAGE SPIN ON MOUSEOVER
+const heroImage = document.querySelector('.hero picture img');
 
-heroImage.addEventListener('dblclick', () => {
-  console.log('Hi Bamford');
+heroImage.addEventListener('mouseover', () => {
+  heroImage.classList.add('spin-animation');
+
+  function delay(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  delay(2000).then(() => heroImage.classList.remove('spin-animation'));
 });
 
 // HERO IMAGE FADE OUT/IN
