@@ -2,7 +2,7 @@ INSERT MANDATORY GIF
 
 # Find Bamford
 
-Find Bamford is a silly game
+Find Bamford is a silly game where you need to find where the small plastic duck Bamford is hiding.
 
 Link to the live page: https://findbamford.netlify.app/
 
@@ -10,14 +10,14 @@ Link to the live page: https://findbamford.netlify.app/
 
 Install this project by following these steps:
 
-- Clone the repository from this address:
+-   Clone the repository from this address:
 
-  > https://github.com/patrosk/useless
+    > https://github.com/patrosk/useless
 
-- from the index.html file, start a live server with the extension Live Server or Live Preview.
+-   from the index.html file, start a live server with the extension Live Server or Live Preview.
 
-- You can also access the live page by following this link:
-  > https://findbamford.netlify.app/
+-   You can also access the live page by following this link:
+    > https://findbamford.netlify.app/
 
 # Code Review
 
