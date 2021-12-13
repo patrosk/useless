@@ -2,7 +2,7 @@ INSERT MANDATORY GIF
 
 # Find Bamford
 
-Find Bamford is
+Find Bamford is a silly game
 
 Link to the live page: https://findbamford.netlify.app/
 
