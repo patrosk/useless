@@ -35,5 +35,5 @@ Code review written by [Simon Helier](https://github.com/Sakariash).
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Alice Nyberg
+2. Sofia Rönnkvist
