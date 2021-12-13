@@ -25,11 +25,11 @@ Install this project by following these steps:
 
 Code review written by [Simon Helier](https://github.com/Sakariash).
 
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
-1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
+1. `app.js:04-05` - The hero picture is covering the text aroundit when spinning.
+1. `app.js:45-46` - The random numeber variable could be declared closers to its context for readability. Also the random number is logged in the console, I presume to test if the code runs?
+1. `app.js:60` - Another random console.log declaration. Probably as a test to see if the code runs?
+1. `style.css` - The contrast on the neon-text could be a little sharper.
+1. `usefullness` - Are you positive this page is useless? I spent over 30 minutes trying to catch the duck on the first try three times in a row, seems like a pretty fun time to me! Great work though. Easy-to-read code and well sturctured files!
 
 # Testers
 
