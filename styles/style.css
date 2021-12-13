@@ -2,15 +2,15 @@
   box-sizing: border-box;
 }
 :root {
-  --faded_black: #1c1816;
+  --faded-black: #1c1816;
   --pink: rgb(255, 75, 165);
   --whiteish: rgb(252, 225, 247);
   --font: 'Quicksand';
-  --neon_font: 'Dancing';
+  --neon-font: 'Dancing';
 }
 body {
   margin: 0;
-  background-color: var(--faded_black);
+  background-color: var(--faded-black);
   font-family: var(--font);
   color: var(--pink);
   font-size: 16px;
@@ -27,7 +27,7 @@ body {
   src: url(/fonts/DancingScript-Regular.woff2) format('woff2');
 }
 
-.first_section {
+.first-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,9 +41,9 @@ h1 {
   margin-bottom: 10px;
   margin-top: 0;
   padding-top: 10px;
-  font-family: var(--neon_font);
+  font-family: var(--neon-font);
 }
-.neon_text {
+.neon-text {
   color: var(--pink);
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px var(--pink),
     0 0 82px var(--pink), 0 0 92px var(--pink), 0 0 102px var(--pink),
@@ -90,10 +90,10 @@ p {
 .here {
   transform: translate(2rem, 15rem);
 }
-.or_here {
+.or-here {
   transform: translate(3rem, 26rem);
 }
-.or_maybe_here {
+.or-maybe-here {
   transform: translate(11rem, 17rem);
 }
 .game-container {
@@ -146,7 +146,7 @@ p {
   border: 1px solid transparent;
 }
 .congrats h2 {
-  font-family: var(--neon_font);
+  font-family: var(--neon-font);
   font-size: 2.5rem;
 }
 .congrats button {

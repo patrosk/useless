@@ -6,7 +6,7 @@
   .here {
     transform: translate(29rem, 15rem);
   }
-  .or_here {
+  .or-here {
     transform: translate(34rem, 26rem);
   }
 }
@@ -20,7 +20,7 @@
   h1 {
     font-size: 6rem;
   }
-  .first_section {
+  .first-section {
     display: flex;
   }
   .hero img {
@@ -34,10 +34,10 @@
   .here {
     transform: translate(43rem, 15rem);
   }
-  .or_here {
+  .or-here {
     transform: translate(38rem, 34rem);
   }
-  .or_maybe_here {
+  .or-maybe-here {
     transform: translate(11rem, 21rem);
   }
   .fail {
